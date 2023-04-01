@@ -1,0 +1,64 @@
+﻿@{
+    ViewData["Title"] = "Página inicial";
+}
+
+@*<div class="text-center">
+    <h1 class="display-4">Bem vindo</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+*@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bem-vindo!</title>
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-top: 50px;
+            margin-bottom: 30px;
+            color: #333;
+            text-shadow: 2px 2px #f2f2f2;
+        }
+
+        p {
+            font-size: 24px;
+            margin-bottom: 50px;
+            color: #666;
+            text-shadow: 1px 1px #f2f2f2;
+        }
+
+        .btn-cadastrar {
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+        }
+
+            .btn-cadastrar:hover {
+                background-color: #3e8e41;
+            }
+    </style>
+</head>
+<body>
+    <h1>Bem-vindo!</h1>
+    <p>Formulário para cadastro de clientes.</p>
+    <p>Este é um projeto desenvolvido para o processo seletivo da empresa <strong>Laborsolo</strong>.</p>
+    <p>Aqui você encontra um formulário que permite adicionar, editar e deletar as informações de um cliente.</p>
+
+    @Html.ActionLink("Novo cliente", "Create", "Clientes", null, new { @class = "btn-cadastrar" })
+
+</body>
+</html>
